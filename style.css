@@ -14,11 +14,11 @@ color: orange;
 p {
 color: gray;
 }
-h1 {
+h4 {
     color: #ff5722; /* Naranja llamativo */
 }
 
-h3 {
+h5 {
     color: #3f51b5; /* Azul moderno */
 }
 
@@ -33,4 +33,119 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+
+
+.destacado {
+    color: #ffffff; /* Color del texto (blanco) */
+    background-color: #ff5722; /* Color de fondo (naranja) */
+    border: 2px solid #009688; /* Borde celeste */
+    padding: 10px; /* Margen interno para que no quede pegado */
+}
+
+.card {
+width: 300px;
+padding: 20px;
+margin: 30px;
+border: 2px solid black;
+}
+border-radius
+box-shadow
+
+.contenedor {
+    display: flex; /* Coloca los elementos hijos en una fila */
+    gap: 20px; /* Separa las tarjetas entre sí */
+    justify-content: center; /* Centra las tarjetas horizontalmente (Desafío) */
+    align-items: center; /* Centra verticalmente si es necesario */
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #f0f0f0; /* Fondo de la tarjeta */
+    padding: 20px 30px; /* Espacio interno */
+    border: 2px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados para que se vea más profesional */
+}
+
+/* Estilo base para celulares: tarjetas en vertical */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Para computadoras: tarjetas en horizontal */
+@media (min-width: 600px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+.mi-boton {
+    background-color: #ff5722; /* Tener fondo */
+    color: #ffffff; /* Tener texto blanco */
+    border-radius: 8px; /* Tener bordes redondeados */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s; /* Suaviza el cambio de efecto */[span_2](start_span)[span_2](end_span)
+}
+
+.mi-boton:hover {
+    transform: scale(1.05); /* Aumenta ligeramente su tamaño al pasar el mouse */[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span)
+}
+
+:root {
+    --principal: #222;
+    --secundario: #555;
+    --fondo: #eeeeee;
+}
+
+body {
+    background-color: var(--fondo); 
+}
+
+h1 {
+    color: var(--principal);
+}
+
+p {
+    color: var(--secundario);
 }
